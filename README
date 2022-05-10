@@ -1,0 +1,11 @@
+#projet
+ Il était question dans ce mini projet de lire des données dépuis un fichier .txt . 
+Nous l'avons fait en stockant le contenu du fichier dans une liste (arrayList). 
+Ensuite de compter les éléments du fichier qui sont sans doute les symptômes des maladies qui étaient écrits avec doublons .
+ La dernière étape du projet consistait à produire un fichier de sortie result.out qui comporterait tous les symptômes par ordre alphabétique avec chacun leur nombre d'occurrences.
+ 
+ Description technique
+ Dans ce mini projet, nous conçu 4 classes parmi lesquelles une classe principale Main et 3 classes chacune d'elle implémente une interface.
+ Certains concepts de la programmation orientée objet ont mise en oeuvre avec de la refactory du code.
+ 
+ Objectif global du projet: manipuler les fichiers en java
