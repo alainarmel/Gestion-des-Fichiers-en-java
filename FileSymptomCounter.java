@@ -5,20 +5,17 @@ import java.util.*;
 
 public class FileSymptomCounter implements SymptomCounter {
 
-    public List<String>  count(List<String> symptomList) {
+    public TreeMap<String, Integer> count(List<String> symptomList) {
 
-        List<String> cleanList = new ArrayList<>();
+        TreeMap<String,Integer> cleanSymptomList=new TreeMap<>();
 
-         List<String> sortedList = symptomList.stream().sorted().toList(); //ranger les éléments de la liste par ordre croissant
-
-        // Traverse through the first list
-        for (int index = 0; index < sortedList.size(); index++) {
-
-            if (!cleanList.contains(sortedList.get(index))) {  // vérifier c'est l'index n'est pas dans la nouvelle liste si oui
-                cleanList.add(sortedList.get(index));  //ajouter l'élément de l'index de la liste myListe dans la nouvelle liste (newList)
-            }
+        // Traverse through the list for adding elements into the map . What we must know here is that treemap doesn't allow replicates things.
+        for (int index = 0; index < symptomList.size(); index++) {
+            int nbreOccurrence = Collections.frequency(symptomList, symptomList.get(index));
+            cleanSymptomList.put(symptomList.get(index),nbreOccurrence);
         }
-        return cleanList;
+        return cleanSymptomList;
+
     }
 
 }

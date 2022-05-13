@@ -5,5 +5,5 @@ import java.util.*;
 
 public interface SymptomCounter {
 
-    List<String> count(List<String> myList);
+    TreeMap<String, Integer> count(List<String> symptomList);
 }

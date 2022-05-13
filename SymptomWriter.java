@@ -6,5 +6,5 @@ import java.util.*;
 
 public interface SymptomWriter {
 
-    void writeFile(String filepathWriting,List<String> myList,List<String> newList) throws IOException;
+    void writeFile(String filepathWriting,TreeMap<String, Integer> cleanSymptomList) throws IOException;
 }

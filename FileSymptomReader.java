@@ -8,8 +8,8 @@ import java.nio.file.*;
 
         public  List<String> readSymptom (String filepath)throws IOException{ /**lecture des symptomes d'un fichier texte et les mettre dans une liste*/
 
-            List <String> myList =  Files.readAllLines(Paths.get(filepath));
-            return myList;
+            List <String> symptomList =  Files.readAllLines(Paths.get(filepath));
+            return symptomList;
         }
     }
 
